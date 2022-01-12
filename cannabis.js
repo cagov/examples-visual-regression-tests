@@ -20,18 +20,16 @@ const desktopShort = {
   height: 500,
 };
 
-// Define default test.
-// Get paths. cd ~/Sites/covid10/docs && ls -d */| pbcopy
-let pathsToTest = [
-  "",
-  "2021/12/06/cannabis-advisory-committee-meeting/index.html",
-  "resources/rulemaking/index.html",
-  "2021/12/21/department-of-cannabis-control-files-emergency-regulations-for-equity-fee-waivers-public-comment-period-begins-today/index.html",
-  "2021/12/21/californias-cannabis-department-seeks-members-for-cannabis-advisory-committee/index.html",
-  "about-us/dcc-events/index.html",
-  "serp/index.html?q=cannabis",
-  "about-us/announcements/index.html",
- ];
+const pagesToTest = [
+  { landing: '' }, // landing.njk
+  { event: '2021/12/06/cannabis-advisory-committee-meeting/' }, // event.njk
+  { page: 'resources/rulemaking/' }, // page.njk
+  { post: '2022/01/05/californias-cannabis-department-awards-nearly-100-million-in-grants-to-local-governments/' }, // post.njk
+  { pressRelease: '2021/12/20/california-to-offer-financial-support-for-cannabis-equity-businesses-through-fee-waivers/' }, // press-release.njk
+  { singleColunWide: 'about-us/dcc-events/' }, // single-column-wide.njk
+  { search: 'serp/?q=cannabis' }, // search.njk
+  { singleColumn: 'about-us/announcements/' }, // single-column.njk
+];
 
 let clickSelectorsToTest = [];
 let keyPressSelectorsToTest = [];
@@ -42,11 +40,14 @@ let readySelectorToTest = "body";
 // -------------
 // Define scenario.
 let scenariosToTest = [];
-for (const value of pathsToTest) {
+for (const pageToTest of pagesToTest) {
+  const label = Object.keys(pageToTest)[0];
+  const path = Object.values(pageToTest)[0];
+
   scenariosToTest.push({
-    label: value,
-    url: multidevURL + "/" + value,
-    referenceUrl: liveURL + "/" + value,
+    label: label,
+    url: multidevURL + "/" + path,
+    referenceUrl: liveURL + "/" + path,
     hideSelectors: [],
     removeSelectors: [],
     keyPressSelectors: keyPressSelectorsToTest,
