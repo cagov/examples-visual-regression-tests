@@ -2,44 +2,30 @@
 
 ## Requirements
 
-- Nodejs
+- npm
 - git
 
 ## Before first use.
 
-1. clone repo `gh repo clone zakiya/cagov-tests` or `git@github.com:zakiya/cagov-tests.git`
-2. `cd cagov-tests/backstopjs`
+1. clone repo `gh repo clone cagov/examples-visual-regression-tests` or `git clone git@github.com:zcagov/examples-visual-regression-tests.git`
 3. `npm install`
-4. `cp example.env .env`
 
 ## Run tests
 
 1. Run site locally
-   a. Go to project repo root. (`z covid19`\*)
+   a. Go to project repo root.
    b. `git pull` (optional)
    c. `npm run start` (or equivalent)
-2. Go back to this project root in another terminal window. (`z backstopjs`)
-3. Verify the url of live and local sites match value in .env
+2. Go back to this project root in another terminal window. (`z examples-visual-regression-tests`)
+3. Verify the url of live and local sites match value in SITE.js file.
 4. Initiate backstop with `npm run backstop`
 
 
-### Test commands - cannabis
+### Test each .njk template on the site.
 
-- Generate reference files for main test: `npm run cannabis:ref`
+- cannabis: `npm run test:cannabis`
 
-- Test local against stored references: `npm run cannabis:test`
-
-
-
-### Test commands - covid
-
-- Generate reference files for main test: `npm run covid:ref`
-
-- Test local against stored references: `npm run covid:test`
-
-- Generate reference files for interactive test: `covid:interactive:ref`
-
-- Test local against stored interactive references: `covid:interactive:test`
+- drought: `npm run cannabis:test`
 
 
 # Notes for starting a BackstopJS project from scratch.
@@ -52,4 +38,4 @@
 
 - backstop.json is automatically generated with backstop init. Do we need it? want it?
 
-\*`z` is the command (z-sh)[https://github.com/agkozak/zsh-z] . `cd` also works!
+\* `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!
