@@ -63,7 +63,7 @@ module.exports = {
   viewports: viewportsToTest,
   scenarios: scenariosToTest,
   paths: {
-    bitmaps_reference: "backstop_data/bitmaps_reference",
+    bitmaps_reference: `backstop_data/bitmaps_reference/${site}`,
     bitmaps_test: "backstop_data/bitmaps_test",
     engine_scripts: "backstop_data/engine_scripts",
     html_report: "backstop_data/html_report",
