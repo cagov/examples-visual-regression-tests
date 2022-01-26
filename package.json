@@ -16,7 +16,7 @@
   "author": "Zakiya Khabir",
   "license": "MIT",
   "dependencies": {
-    "backstopjs": "^5.3.7",
+    "backstopjs": "^6.0.4",
     "dotenv": "^10.0.0"
   }
 }
