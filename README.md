@@ -25,14 +25,10 @@
 
 - cannabis: `npm run test:cannabis`
 
-- drought: `npm run cannabis:test`
+- drought: `npm run test:drought`
 
+- design System: `npm run test:designSystem`
 
-# Notes for starting a BackstopJS project from scratch.
-
-- If you want to take advantage of the helpful backstop_data/engine_scripts,
-  in addition to the commands above, add `"init": "backstop init"` to package.json
-  scripts and run `npm run init`
 
 # @todo
 
