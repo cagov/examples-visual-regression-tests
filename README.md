@@ -23,15 +23,10 @@
 
 ### Test each .njk template on the site.
 
-- cannabis: `npm run test:cannabis`
+- Cannabis: `npm run test:cannabis`
 
-- drought: `npm run test:drought`
+- Drought: `npm run test:drought`
 
-- design System: `npm run test:designSystem`
-
-
-# @todo
-
-- backstop.json is automatically generated with backstop init. Do we need it? want it?
+- Design system: `npm run test:designSystem`
 
 \* `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!
