@@ -70,11 +70,12 @@ module.exports = {
     ci_report: "backstop_data/ci_report",
   },
   report: ["browser", "CI"],
-  engine: "puppeteer",
+  engine: "playwright",
   engineOptions: {
     args: ["--no-sandbox"],
+    browser: "webkit"
   },
-  onReadyScript: "puppet/onReady.js",
+  onReadyScript: "playwright/onReady.js",
   asyncCaptureLimit: 5,
   asyncCompareLimit: 50,
   debug: false,
