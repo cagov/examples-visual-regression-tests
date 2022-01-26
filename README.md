@@ -29,4 +29,8 @@
 
 - Design system: `npm run test:designSystem`
 
-\* `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!
+### Hints and troubleshooting
+
+- Change browser in main.js by changing `engineOptions.browser` to `chromium`, `firefox`, or `webkit`.
+
+- `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!
