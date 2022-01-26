@@ -49,7 +49,7 @@ for (const pageToTest of pagesToTest) {
     hoverSelectors: hoverSelectorsToTest,
     clickSelectors: clickSelectorsToTest,
     selectorExpansion: true,
-    selectors: ["body"],
+    selectors: ["document", "viewport"],
     readyEvent: null,
     delay: 7000,
     misMatchThreshold: 0.1,
