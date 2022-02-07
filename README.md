@@ -23,19 +23,14 @@
 
 ### Test each .njk template on the site.
 
-- cannabis: `npm run test:cannabis`
+- Cannabis: `npm run test:cannabis`
 
-- drought: `npm run cannabis:test`
+- Drought: `npm run test:drought`
 
+- Design system: `npm run test:designSystem`
 
-# Notes for starting a BackstopJS project from scratch.
+### Hints and troubleshooting
 
-- If you want to take advantage of the helpful backstop_data/engine_scripts,
-  in addition to the commands above, add `"init": "backstop init"` to package.json
-  scripts and run `npm run init`
+- Change browser in main.js by changing `engineOptions.browser` to `chromium`, `firefox`, or `webkit`.
 
-# @todo
-
-- backstop.json is automatically generated with backstop init. Do we need it? want it?
-
-\* `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!
+- `z` is the command [z-sh(https://github.com/agkozak/zsh-z) . `cd` also works!

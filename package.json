@@ -1,8 +1,8 @@
 {
-  "name": "cagov-backstop-zk",
-  "version": "1.0.0",
+  "name": "cagov-backstop",
+  "version": "1.1.0",
   "description": "backstoptests",
-  "main": "index.js",
+  "main": "backstop.js",
   "scripts": {
     "backstop": "backstop init",
     "covid:ref": "SITE=covid backstop reference --config=backstop.js",
@@ -16,7 +16,7 @@
   "author": "Zakiya Khabir",
   "license": "MIT",
   "dependencies": {
-    "backstopjs": "^5.3.7",
+    "backstopjs": "^6.0.4",
     "dotenv": "^10.0.0"
   }
 }
