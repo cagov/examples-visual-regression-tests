@@ -13,6 +13,7 @@ const siteConfig = {
     { backToTop: 'components/back-to-top/readme/' },
     { about: 'about/' },
     { styleGuides: 'style/content/' },
+    { design: 'style/design/' },
 
   ],
   readySelectorToTest: "body"
