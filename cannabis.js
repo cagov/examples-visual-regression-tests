@@ -12,6 +12,8 @@ const siteConfig = {
     { singleColunWide: 'about-us/dcc-events/' }, // single-column-wide.njk
     { search: 'serp/?q=cannabis' }, // search.njk
     { singleColumn: 'about-us/announcements/' }, // single-column.njk
+    { combobox: 'cannabis-laws/where-cannabis-businesses-are-allowed/' }, // data-viz
+    { notFound: 'cannawhat' }, // 404
   ],
   readySelectorToTest: "body"
 }
