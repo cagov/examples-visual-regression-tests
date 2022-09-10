@@ -10,6 +10,7 @@
     "covid:interactive:ref": "SITE=covid TEST_TYPE=interactive backstop reference --config=backstop.js",
     "covid:interactive:test": "SITE=covid TEST_TYPE=interactive backstop test --config=backstop.js",
     "test:cannabis": "SITE=cannabis backstop reference --config=backstop.js && SITE=cannabis  backstop test --config=backstop.js",
+    "test:cannabisCombobox": "SITE=cannabis backstop reference --config=backstop.js && SITE=cannabisCombobox  backstop test --config=backstop.js",
     "test:drought": "SITE=drought backstop reference --config=backstop.js && SITE=drought backstop test --config=backstop.js",
     "test:designSystem": "SITE=designSystem backstop reference --config=backstop.js && SITE=designSystem backstop test --config=backstop.js"
   },

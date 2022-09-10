@@ -11,6 +11,7 @@ const siteConfig = {
     { home: '' },
     { getStarted: 'get-started/' },
     { backToTop: 'components/back-to-top/readme/' },
+    { icons: 'components/icons/readme/' },
     { about: 'about/' },
     { styleGuides: 'style/content/' },
     { design: 'style/design/' },
