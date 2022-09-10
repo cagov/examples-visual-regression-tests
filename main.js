@@ -14,7 +14,7 @@ const multidevURL = siteConfig.test.replace(/\/$/, "");
 // Get screens.
 const phone = {
   name: "phone",
-  width: 320,
+  width: 380,
   height: 480,
 };
 const desktop = {
